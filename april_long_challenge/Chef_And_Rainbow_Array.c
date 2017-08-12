@@ -21,13 +21,21 @@ while(j>=i)
 if((arr[j]==arr[i])&&((arr[i]==last)||(arr[i]==(last+1))))
 {
 last=arr[i];
-i++;
-j--;
+//i++;
+//j--;
 }
 else
 {
 flag=1;break;
 }
+if(i==j||(j==i+1))
+{
+if(arr[i]!=7)
+{
+flag=1;break;
+}
+}
+i++;j--;
 }
 
 if(flag==1) printf("no\n");
