@@ -20,7 +20,7 @@ int main()
     scanf("%d",&t);
     while(t--)
     {
-        memset(hash,0,1001);
+        memset(hash,0,1001*sizeof(int));
         chef=0;assis=0;last=0;
         scanf("%d%d",&n,&m);
         for(i=0;i<m;i++)
